@@ -1,8 +1,8 @@
 <?php
 
-namespace CultuurNet\GroepsPas\Project;
+namespace CultuurNet\GroepsPas\Test;
 
-use CultuurNet\GroepsPas\Project\Controller\TestController;
+use CultuurNet\GroepsPas\Test\Controller\TestController;
 use Silex\Api\ControllerProviderInterface;
 use Silex\Application;
 use Silex\ControllerCollection;

@@ -2,8 +2,7 @@
 
 namespace CultuurNet\GroepsPas;
 
-use CultuurNet\GroepsPas\Project\ProjectControllerProvider;
-use CultuurNet\GroepsPas\Project\TestControllerProvider;
+use CultuurNet\GroepsPas\Test\TestControllerProvider;
 use JDesrosiers\Silex\Provider\CorsServiceProvider;
 use Silex\Application as SilexApplication;
 use Silex\Provider\RoutingServiceProvider;

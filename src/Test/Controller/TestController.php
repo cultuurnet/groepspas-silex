@@ -1,6 +1,6 @@
 <?php
 
-namespace CultuurNet\GroepsPas\Project\Controller;
+namespace CultuurNet\GroepsPas\Test\Controller;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
