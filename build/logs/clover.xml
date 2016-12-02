@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1480498368">
+  <project timestamp="1480498368">
+    <package name="CultuurNet\GroepsPas\Core\Exception">
+      <file name="/Users/lieven/Sites/Wunderkraut/groepspas/www/src/Core/Exception/ValidationException.php">
+        <class name="ValidationException" namespace="CultuurNet\GroepsPas\Core\Exception">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+        </class>
+        <line num="14" type="method" name="getValidationCode" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <metrics loc="18" ncloc="12" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="CultuurNet\GroepsPas\ErrorHandler">
+      <file name="/Users/lieven/Sites/Wunderkraut/groepspas/www/src/Errorhandler/JsonErrorHandler.php">
+        <class name="JsonErrorHandler" namespace="CultuurNet\GroepsPas\ErrorHandler">
+          <metrics methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="0" elements="22" coveredelements="0"/>
+        </class>
+        <line num="21" type="method" name="handleValidationExceptions" crap="6" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="37" type="method" name="handleAccessDeniedExceptions" crap="6" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="49" type="method" name="handleNotFoundExceptions" crap="6" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="61" type="method" name="handleException" crap="6" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <line num="64" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="72" type="method" name="shouldHandle" crap="6" count="0"/>
+        <line num="74" type="stmt" count="0"/>
+        <line num="75" type="stmt" count="0"/>
+        <line num="77" type="stmt" count="0"/>
+        <metrics loc="79" ncloc="52" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="0" elements="22" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="CultuurNet\GroepsPas\GroupPass\Controller">
+      <file name="/Users/lieven/Sites/Wunderkraut/groepspas/www/src/GroupPass/Controller/GroupPassController.php">
+        <class name="GroupPassController" namespace="CultuurNet\GroepsPas\GroupPass\Controller">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+        </class>
+        <line num="25" type="method" name="__construct" crap="2" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="35" type="method" name="getGroupPassInfo" crap="6" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <metrics loc="45" ncloc="31" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="3" loc="142" ncloc="95" classes="3" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="0" elements="34" coveredelements="0"/>
+  </project>
+</coverage>

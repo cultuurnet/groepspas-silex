@@ -2,7 +2,7 @@
 
 namespace CultuurNet\GroepsPas\Core;
 
-use CultuurNet\Auth\ConsumerCredentials;
+use CultureFeed_Uitpas_Default;
 use CultuurNet\UiTIDProvider\CultureFeed\CultureFeedServiceProvider as CultureFeedServiceProviderOriginal;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -17,33 +17,14 @@ class CultureFeedServiceProvider extends CultureFeedServiceProviderOriginal impl
      */
     public function register(Container $pimple)
     {
-        // Register live.
         parent::register($pimple);
 
-        // Register test.
-        $pimple['culturefeed_test_consumer_credentials'] = function (Container $pimple) {
-            return new ConsumerCredentials(
-                $pimple['culturefeed_test.consumer.key'],
-                $pimple['culturefeed_test.consumer.secret']
-            );
-        };
+        // Set culturefeed_token_credentials to null so we don't have to inject UserServiceProvider and SessionServiceProvider.
+        $pimple['culturefeed_token_credentials'] = null;
 
-        $pimple['culturefeed_test'] = function (Container $pimple) {
-            return new \CultureFeed($pimple['culturefeed_test_oauth_client']);
-        };
-
-        $pimple['culturefeed_test_oauth_client'] = function (Container $pimple) {
-            /* @var ConsumerCredentials $consumerCredentials */
-            $consumerCredentials = $pimple['culturefeed_test_consumer_credentials'];
-
-
-            $oauthClient = new \CultureFeed_DefaultOAuthClient(
-                $consumerCredentials->getKey(),
-                $consumerCredentials->getSecret()
-            );
-            $oauthClient->setEndpoint($pimple['culturefeed_test.endpoint']);
-
-            return $oauthClient;
+        // Register culturefeed_uitpas.
+        $pimple['culturefeed_uitpas'] = function (Container $pimple) {
+          return new CultureFeed_Uitpas_Default($pimple['culturefeed']);
         };
     }
 }
