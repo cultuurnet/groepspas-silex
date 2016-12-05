@@ -31,7 +31,7 @@ class GroupPassController
      * @param Request $request
      * @return JsonResponse
      */
-    public function getGroupPassInfo(Request $request, $id)
+    public function getGroupPassInfo($id)
     {
         $pass = $this->cultureFeedUitpas->getGroupPass($id);
 

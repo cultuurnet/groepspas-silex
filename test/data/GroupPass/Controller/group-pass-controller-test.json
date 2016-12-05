@@ -1,0 +1,30 @@
+{
+  "name": "Davidsfonds test Anna",
+  "endDate": null,
+  "ticketsPerYear": null,
+  "uuid": "83cd39ff-c08b-4afd-8491-a27e8a1c085c",
+  "availableTickets": 0,
+  "kansenStatuut": false,
+  "ticketSaleCoupons": [
+    {
+      "buyConstraint": {
+        "periodType": "ABSOLUTE",
+        "periodVolume": 50
+      },
+      "description": "bon voor groep id AB",
+      "exchangeConstraint": {
+        "periodType": "ABSOLUTE",
+        "periodVolume": 50
+      },
+      "expired": false,
+      "id": "14",
+      "name": "AB groepsbon",
+      "remainingTotal": {
+        "periodType": "ABSOLUTE",
+        "periodVolume": 50
+      },
+      "validFrom": null,
+      "validTo": null
+    }
+  ]
+}
