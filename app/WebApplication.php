@@ -39,6 +39,12 @@ class WebApplication extends ApplicationBase
                     return $errorHandler->handleValidationExceptions($e, $request);
                 }
             );
+            // Code exceptions (400)
+            $this->error(
+                function (\CultureFeed_InvalidCodeException $e, Request $request) use ($errorHandler) {
+                    return $errorHandler->handleInvalidCodeExceptions($e, $request);
+                }
+            );
             // Not found exceptions (404)
             $this->error(
                 function (NotFoundHttpException $e, Request $request) use ($errorHandler) {
@@ -78,6 +84,6 @@ class WebApplication extends ApplicationBase
      */
     protected function mountControllers()
     {
-        $this->mount('group_pass', new GroupPassControllerProvider());
+        $this->mount('group-pass', new GroupPassControllerProvider());
     }
 }

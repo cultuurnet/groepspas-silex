@@ -35,9 +35,9 @@ class ApplicationBase extends SilexApplication
         $this->register(
             new CultureFeedServiceProvider(),
             [
-                'culturefeed.endpoint' => $this['config']['uitid'][$this['config']['environment']]['base_url'],
-                'culturefeed.consumer.key' => $this['config']['uitid'][$this['config']['environment']]['consumer']['key'],
-                'culturefeed.consumer.secret' => $this['config']['uitid'][$this['config']['environment']]['consumer']['secret'],
+                'culturefeed.endpoint' => $this['config']['uitid']['base_url'],
+                'culturefeed.consumer.key' => $this['config']['uitid']['consumer']['key'],
+                'culturefeed.consumer.secret' => $this['config']['uitid']['consumer']['secret'],
 
             ]
         );

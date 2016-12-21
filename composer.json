@@ -9,7 +9,7 @@
         "jdesrosiers/silex-cors-provider": "~1.0",
         "cultuurnet/culturefeed-http-guzzle": "dev-master",
         "symfony/browser-kit": "^3.1",
-        "cultuurnet/culturefeed-php": "dev-feature/grouppas as 1.6.x-dev",
+        "cultuurnet/culturefeed-php": "dev-develop as 1.6.x-dev",
         "cultuurnet/silex-uitid-provider": "2.x-dev"
     },
     "extra": {

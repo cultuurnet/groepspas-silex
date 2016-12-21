@@ -29,6 +29,23 @@ class JsonErrorHandler
         ];
         return new JsonResponse($data, 400);
     }
+
+    /**
+     * @param \CultureFeed_InvalidCodeException $e
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @return null|\Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function handleInvalidCodeExceptions(\CultureFeed_InvalidCodeException $e, Request $request) {
+        if (!$this->shouldHandle($request)) {
+           return null;
+        }
+        $data = [
+            'code' => $e->getCode(),
+            'message' => $e->getMessage(),
+        ];
+        return new JsonResponse($data, 400);
+    }
+
     /**
      * @param AccessDeniedHttpException $e
      * @param Request $request
