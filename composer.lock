@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "0ae66e32e3988f57e056d6625821643c0ee344fe"
+                "reference": "b27306a7c735e8ba176a3bfeb0c779fe29904bc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/0ae66e32e3988f57e056d6625821643c0ee344fe",
-                "reference": "0ae66e32e3988f57e056d6625821643c0ee344fe",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/b27306a7c735e8ba176a3bfeb0c779fe29904bc3",
+                "reference": "b27306a7c735e8ba176a3bfeb0c779fe29904bc3",
                 "shasum": ""
             },
             "require": {
