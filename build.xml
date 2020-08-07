@@ -69,5 +69,17 @@
         <phingcall target="unit-tests"/>
         <phingcall target="coding-standards"/>
     </target>
+    
+    <!--
+        Used by Jenkins to install Silex dependencies.
+    -->
+    <Target Name="Composer" Description="Installing Dependencies">
+        <Composer Command="Install">
+            <Arg Value="--no-dev"/>
+            <Arg Value="--ignore-platform-reqs"/>
+            <Arg Value="--optimize-autoloader"/>
+            <Arg Value="--no-interaction"/>
+        </Composer>
+    </Target>
 
 </project>
