@@ -73,13 +73,13 @@
     <!--
         Used by Jenkins to install Silex dependencies.
     -->
-    <Target Name="composer" Description="Installing Dependencies">
-        <Composer Command="Install">
-            <Arg Value="--no-dev"/>
-            <Arg Value="--ignore-platform-reqs"/>
-            <Arg Value="--optimize-autoloader"/>
-            <Arg Value="--no-interaction"/>
-        </Composer>
-    </Target>
+    <target name="composer" description="Installing Dependencies">
+        <composer command="Install">
+            <arg value="--no-dev"/>
+            <arg value="--ignore-platform-reqs"/>
+            <arg value="--optimize-autoloader"/>
+            <arg value="--no-interaction"/>
+        </composer>
+    </target>
 
 </project>
