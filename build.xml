@@ -76,7 +76,7 @@
     <target name="composer">
         <exec executable="composer" passthru="true" checkreturn="true">
             <arg value="install"/>
-            <arg value="-no-dev"/>
+            <arg value="--no-dev"/>
             <arg value="--ignore-platform-reqs"/>
             <arg value="--optimize-autoloader"/>
             <arg value="--no-interaction"/>
