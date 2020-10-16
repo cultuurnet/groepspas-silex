@@ -44,6 +44,8 @@ uitid:
 debug: false'''
 println configFile.text
 
+def dir = new File("pkg")
+dir.mkdirs() //Make new directory
 
-//pipeline.sh(script: 'mkdir pkg')
-//pipeline.sh(script: "bundle exec fpm -v ${pipelinVersion} ${fpmArgs}")
+
+return this
